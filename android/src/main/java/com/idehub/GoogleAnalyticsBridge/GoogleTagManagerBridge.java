@@ -53,7 +53,7 @@ public class GoogleTagManagerBridge extends ReactContextBaseJavaModule {
         TagManager mTagManager = TagManager.getInstance(getReactApplicationContext());
         //using -1 here because it can't access raw in app
         openOperationInProgress = true;
-        PendingResult<ContainerHolder> pending = mTagManager.loadContainerPreferFresh(containerId, -1);
+        PendingResult<ContainerHolder> pending = mTagManager.loadContainerPreferFresh(containerId, R.raw.gtm);
         pending.setResultCallback(new ResultCallback<ContainerHolder>() {
             @Override
             public void onResult(ContainerHolder containerHolder) {
