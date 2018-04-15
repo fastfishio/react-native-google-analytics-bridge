@@ -18,5 +18,7 @@ android {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile 'com.google.android.gms:play-services-analytics:+'
+    compile 'com.google.android.gms:play-services-analytics:15.0.0'
+    compile "com.google.android.gms:play-services-tagmanager-v4-impl:15.0.0"
+
 }
